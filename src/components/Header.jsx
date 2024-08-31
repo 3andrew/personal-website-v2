@@ -9,13 +9,13 @@ export function Header() {
                 <p className="text-lg font-semibold">Computer Science Student @ University of Waterloo</p>
             </div>
             <div className="flex">
-                <button className="text-3xl hover:text-slate-200">
+                <a className="text-3xl hover:text-slate-200" href={"https://github.com/andrew-33"}>
                     <FaGithub />
-                </button>
+                </a>
                 <div className="mx-2"></div>
-                <button className="text-3xl hover:text-slate-200">
+                <a className="text-3xl hover:text-slate-200" href={"https://www.linkedin.com/in/andrewlin2/"}>
                     <FaLinkedin />
-                </button>
+                </a>
             </div>
         </header>
     );    
