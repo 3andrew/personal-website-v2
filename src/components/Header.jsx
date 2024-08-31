@@ -1,5 +1,4 @@
-import IconGitHub from "./icons/github";
-import IconLinkedin from "./icons/linkedin";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function Header() {
     return (
@@ -9,10 +8,14 @@ export function Header() {
                 <br/>
                 <p className="text-lg font-semibold">Computer Science Student @ University of Waterloo</p>
             </div>
-            <div className="flex w-20">
-                <IconGitHub />
+            <div className="flex">
+                <button className="text-3xl hover:text-slate-200">
+                    <FaGithub />
+                </button>
                 <div className="mx-2"></div>
-                <IconLinkedin />
+                <button className="text-3xl hover:text-slate-200">
+                    <FaLinkedin />
+                </button>
             </div>
         </header>
     );    
