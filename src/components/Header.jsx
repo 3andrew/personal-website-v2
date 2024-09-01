@@ -33,16 +33,16 @@ export function Header() {
                 <p className="mt-6 text-xl font-medium tracking-tight text-violet-300">Computer Science @ University of Waterloo</p>
                 <nav>
                     <ul className="flex-col space-y-5 text-slate-400 mt-16 py-5 font-medium text-sm uppercase tracking-widest">
-                        <li className={`${activeSection === 'about' ? 'text-violet-400' : ''}`}>
+                        <li className={`${activeSection === 'about' ? 'text-violet-300' : ''}`}>
                             <a href="#about">About</a>
                         </li>
-                        <li className={`${activeSection === 'experience' ? 'text-violet-400' : ''}`}>
+                        <li className={`${activeSection === 'experience' ? 'text-violet-300' : ''}`}>
                             <a href="#experience">Experience</a>
                         </li>
-                        <li className={`${activeSection === 'experience' ? 'text-violet-400' : ''}`}>
+                        <li className={`${activeSection === 'education' ? 'text-violet-300' : ''}`}>
                             <a href="#education">Education</a>
                         </li>
-                        <li className={`${activeSection === 'projects' ? 'text-violet-400' : ''}`}>
+                        <li className={`${activeSection === 'projects' ? 'text-violet-300' : ''}`}>
                             <a href="#projects">Projects</a>
                         </li>
                     </ul>
@@ -50,11 +50,11 @@ export function Header() {
             </div>
             
             <div className="flex mt-8">
-                <a className="text-3xl hover:text-violet-400" href="https://github.com/andrew-33">
+                <a className="text-3xl hover:text-violet-300" href="https://github.com/andrew-33">
                     <FaGithub />
                 </a>
                 <div className="mx-3"></div>
-                <a className="text-3xl hover:text-violet-400" href="https://www.linkedin.com/in/andrewlin2/">
+                <a className="text-3xl hover:text-violet-300" href="https://www.linkedin.com/in/andrewlin2/">
                     <FaLinkedin />
                 </a>
             </div>
