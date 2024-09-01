@@ -30,7 +30,7 @@ export function Header() {
         <header className="w-1/2 p-4 sticky top-0 flex max-h-screen w-1/2 flex-col justify-between py-24">
             <div className="text-slate-200">
                 <p className="text-5xl font-bold tracking-tight">Andrew Lin</p>
-                <p className="mt-6 text-xl font-medium tracking-tight">Computer Science @ University of Waterloo</p>
+                <p className="mt-6 text-xl font-medium tracking-tight text-violet-300">Computer Science @ University of Waterloo</p>
                 <nav>
                     <ul className="flex-col space-y-5 text-slate-400 mt-16 py-5 font-medium text-sm uppercase tracking-widest">
                         <li className={`${activeSection === 'about' ? 'text-violet-400' : ''}`}>
@@ -38,6 +38,9 @@ export function Header() {
                         </li>
                         <li className={`${activeSection === 'experience' ? 'text-violet-400' : ''}`}>
                             <a href="#experience">Experience</a>
+                        </li>
+                        <li className={`${activeSection === 'experience' ? 'text-violet-400' : ''}`}>
+                            <a href="#education">Education</a>
                         </li>
                         <li className={`${activeSection === 'projects' ? 'text-violet-400' : ''}`}>
                             <a href="#projects">Projects</a>
