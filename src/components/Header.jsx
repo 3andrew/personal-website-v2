@@ -7,7 +7,7 @@ export function Header() {
     const handleScroll = () => {
         const sections = document.querySelectorAll('section');
     
-        let currentSection = 'about';
+        let currentSection = '';
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -31,26 +31,27 @@ export function Header() {
             <div className="text-slate-200">
                 <p className="text-5xl font-bold tracking-tight">Andrew Lin</p>
                 <p className="mt-6 text-xl font-medium tracking-tight">Computer Science @ University of Waterloo</p>
+                <nav>
+                    <ul className="flex-col space-y-5 text-slate-400 mt-16 py-5 font-medium text-sm uppercase tracking-widest">
+                        <li className={`${activeSection === 'about' ? 'text-violet-400' : ''}`}>
+                            <a href="#about">About</a>
+                        </li>
+                        <li className={`${activeSection === 'experience' ? 'text-violet-400' : ''}`}>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li className={`${activeSection === 'projects' ? 'text-violet-400' : ''}`}>
+                            <a href="#projects">Projects</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            {/* <nav>
-                <ul className="flex space-x-8 text-slate-400">
-                    <li className={`${activeSection === 'about' ? 'text-teal-300' : ''}`}>
-                        <a href="#about">About</a>
-                    </li>
-                    <li className={`${activeSection === 'experience' ? 'text-teal-300' : ''}`}>
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li className={`${activeSection === 'projects' ? 'text-teal-300' : ''}`}>
-                        <a href="#projects">Projects</a>
-                    </li>
-                </ul>
-            </nav> */}
+            
             <div className="flex mt-8">
-                <a className="text-3xl hover:text-slate-200" href="https://github.com/andrew-33">
+                <a className="text-3xl hover:text-violet-400" href="https://github.com/andrew-33">
                     <FaGithub />
                 </a>
                 <div className="mx-3"></div>
-                <a className="text-3xl hover:text-slate-200" href="https://www.linkedin.com/in/andrewlin2/">
+                <a className="text-3xl hover:text-violet-400" href="https://www.linkedin.com/in/andrewlin2/">
                     <FaLinkedin />
                 </a>
             </div>
