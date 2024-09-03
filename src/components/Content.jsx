@@ -4,7 +4,7 @@ export function Content() {
             <section id="about" className="py-16">
                 <h2 className="font-bold text-2xl uppercase tracking-wider text-slate-200">About Me</h2>
                 <p className="mt-4 text-slate-400">I'm a full-stack developer and third-year Computer Science student at the University of Waterloo. </p>
-                <p className="mt-4 text-slate-400">I'm always open to connect - feel free reach out at <a className="hover:text-violet-300 underline underline-offset-4" href="mailto:adlin@uwaterloo.ca">adlin@uwaterloo.ca</a>
+                <p className="mt-4 text-slate-400">If you'd like to connect, feel free reach out at <a className="hover:text-violet-300 underline underline-offset-4" href="mailto:adlin@uwaterloo.ca">adlin@uwaterloo.ca</a>.
                 </p>
             </section>
 
@@ -80,7 +80,10 @@ export function Content() {
                     description="App that provides links to music database websites based on user's current Spotify listening activity"
                     tags={['JavaScript', 'HTML/CSS']}
                     url="https://github.com/3andrew/ticket-finder"
-                />       
+                />
+                <p className="mt-40 text-sm font-medium tracking-tight">
+                    © Andrew Lin 2024 
+                </p>       
             </section>
         </div>
     );
@@ -99,12 +102,12 @@ const JobCard = ({ imagePath, companyName, position, location, duration, tags, u
                     />
                     <div>
                         <p className="text-lg font-semibold text-slate-200">{companyName}</p>
-                        <p className="text-md text-slate-200">{position}</p>
+                        <p className="text-md text-slate-400">{position}</p>
                     </div>
                 </div>
                 <div className="text-right">
                     <p className="text-lg font-semibold text-slate-200">{location}</p>
-                    <p className="text-md text-slate-200">{duration}</p>
+                    <p className="text-md text-slate-400">{duration}</p>
                 </div>
             </div>
             <div className="flex space-x-2">
@@ -128,7 +131,7 @@ const ProjectCard = ({ projectName, description, tags, url }) => {
                 <div className="flex items-start">
                     <div>
                         <p className="text-lg font-semibold text-slate-200 mb-2">{projectName}</p>
-                        <p className="text-md text-slate-200">{description}</p>
+                        <p className="text-md text-slate-400">{description}</p>
                     </div>
                 </div>
             </div>
