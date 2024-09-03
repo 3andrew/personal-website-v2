@@ -3,8 +3,8 @@ export function Content() {
         <div className="w-1/2 p-4 z-10">
             <section id="about" className="py-16">
                 <h2 className="font-bold text-2xl uppercase tracking-wider text-slate-200">About Me</h2>
-                <p className="mt-4 text-slate-400">I'm a full-stack developer and third-year Computer Science student at the University of Waterloo. </p>
-                <p className="mt-4 text-slate-400">If you'd like to connect, feel free reach out at <a className="hover:text-violet-300 underline underline-offset-4" href="mailto:adlin@uwaterloo.ca">adlin@uwaterloo.ca</a>.
+                <p className="mt-4 text-slate-400">I&apos;m a full-stack developer and third-year Computer Science student at the University of Waterloo. </p>
+                <p className="mt-4 text-slate-400">If you&apos;d like to connect, feel free reach out at <a className="hover:text-violet-300 underline underline-offset-4" href="mailto:adlin@uwaterloo.ca">adlin@uwaterloo.ca</a>.
                 </p>
             </section>
 
