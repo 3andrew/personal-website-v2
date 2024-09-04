@@ -73,7 +73,7 @@ export function Content() {
                     projectName="Portfolio Website"
                     description="Personal website using Three JS and Tailwind CSS, deployed with Vercel"
                     tags={['React', 'Tailwind CSS', 'Three JS']}
-                    url=""
+                    url="https://andrewlin.ca"
                 />     
                 <ProjectCard
                     projectName="External Links for Spotify"

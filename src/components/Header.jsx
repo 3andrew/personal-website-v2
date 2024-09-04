@@ -6,16 +6,19 @@ export function Header() {
 
     const handleScroll = () => {
         const sections = document.querySelectorAll('section');
+        const offset = 10;
     
         let currentSection = '';
-
+    
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (window.scrollY >= sectionTop) {
+            const sectionTop = section.offsetTop - offset;
+            const sectionBottom = sectionTop + section.offsetHeight;
+    
+            if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
                 currentSection = section.getAttribute('id');
             }
         });
-
+    
         setActiveSection(currentSection);
     };
 
