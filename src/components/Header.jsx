@@ -53,7 +53,7 @@ export function Header() {
             </div>
             
             <div className="flex mt-8">
-                <a className="text-3xl hover:text-violet-300" href="https://github.com/andrew-33">
+                <a className="text-3xl hover:text-violet-300" href="https://github.com/3andrew">
                     <FaGithub />
                 </a>
                 <div className="mx-3"></div>
