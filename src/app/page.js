@@ -24,9 +24,9 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </head>
 
-        <div className="bg-zinc-900 leading-relaxed text-slate-400 antialiased selection:bg-violet-300 selection:text-violet-900">
+        <div className="bg-zinc-900 leading-relaxed text-slate-400 antialiased selection:bg-violet-300 selection:text-violet-900 overflow-x-hidden sm:overflow-x-visible">
           <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-            <div className="lg:flex lg:justify-between lg:gap-4">
+            <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-4">
               <Header />
               <Content />
             </div>

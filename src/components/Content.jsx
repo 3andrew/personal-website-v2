@@ -1,16 +1,18 @@
 export function Content() {
     return (
-        <div className="w-1/2 p-4 z-10">
+        <div className="w-full lg:w-1/2 p-4 z-10">
             <section id="about" className="py-16">
-                <h2 className="font-bold text-2xl uppercase tracking-wider text-slate-200">About Me</h2>
-                <p className="mt-4 text-slate-400">I&apos;m a full-stack developer and third-year Computer Science student at the University of Waterloo. </p>
-                <p className="mt-4 text-slate-400">If you&apos;d like to connect, feel free reach out at <a className="hover:text-violet-300 underline underline-offset-4" href="mailto:adlin@uwaterloo.ca">adlin@uwaterloo.ca</a>.
+                <h2 className="font-bold text-xl sm:text-2xl uppercase tracking-wider text-slate-200">About Me</h2>
+                <p className="mt-4 text-sm sm:text-base text-slate-400">
+                    I&apos;m a full-stack developer and 2B Computer Science student at the University of Waterloo.
+                </p>
+                <p className="mt-4 text-sm sm:text-base text-slate-400">
+                    If you&apos;d like to connect, feel free to reach out at <a className="hover:text-violet-300 underline underline-offset-4" href="mailto:adlin@uwaterloo.ca">adlin@uwaterloo.ca</a>.
                 </p>
             </section>
 
             <section id="experience" className="py-16">
-                <h2 className="font-bold text-2xl uppercase tracking-wider text-slate-200">Experience</h2>
-                
+                <h2 className="font-bold text-xl sm:text-2xl uppercase tracking-wider text-slate-200">Experience</h2>
                 <JobCard
                     imagePath="/td.png"
                     companyName="TD Bank"
@@ -20,7 +22,6 @@ export function Content() {
                     tags={['JavaScript', 'TypeScript', 'React', 'FastAPI', 'GCP']}
                     url="https://www.td.com"
                 />
-
                 <JobCard
                     imagePath="/altislabs.png"
                     companyName="Altis Labs"
@@ -30,7 +31,6 @@ export function Content() {
                     tags={['TypeScript', 'FastAPI', 'GraphQL', 'Hasura', 'PostgreSQL', 'AWS']}
                     url="https://www.altislabs.com/"
                 />
-
                 <JobCard
                     imagePath="/altislabs.png"
                     companyName="Altis Labs"
@@ -43,7 +43,7 @@ export function Content() {
             </section>
 
             <section id="education" className="py-16">
-                <h2 className="font-bold text-2xl uppercase tracking-wider text-slate-200">Education</h2>
+                <h2 className="font-bold text-xl sm:text-2xl uppercase tracking-wider text-slate-200">Education</h2>
                 <JobCard
                     imagePath="/uw.png"
                     companyName="University of Waterloo"
@@ -56,7 +56,7 @@ export function Content() {
             </section>
 
             <section id="projects" className="py-16">
-                <h2 className="font-bold text-2xl uppercase tracking-wider text-slate-200">Projects</h2>
+                <h2 className="font-bold text-xl sm:text-2xl uppercase tracking-wider text-slate-200">Projects</h2>
                 <ProjectCard
                     projectName="Ticket Finder"
                     description="Live-updating dashboard to keep track of upcoming events and ticket price history"
@@ -81,13 +81,14 @@ export function Content() {
                     tags={['JavaScript', 'HTML/CSS']}
                     url="https://github.com/3andrew/ticket-finder"
                 />
-                <p className="mt-40 text-sm font-medium tracking-tight">
-                    © Andrew Lin 2024 
-                </p>       
             </section>
+
+            <p className="mt-40 text-xs sm:text-sm font-medium tracking-tight">
+                © Andrew Lin 2024
+            </p>
         </div>
     );
-    
+
 }
 
 const JobCard = ({ imagePath, companyName, position, location, duration, tags, url }) => {
@@ -110,7 +111,7 @@ const JobCard = ({ imagePath, companyName, position, location, duration, tags, u
                     <p className="text-md text-slate-400">{duration}</p>
                 </div>
             </div>
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap gap-2">
                 {tags.map((tag, index) => (
                     <span
                         key={index}
@@ -135,7 +136,7 @@ const ProjectCard = ({ projectName, description, tags, url }) => {
                     </div>
                 </div>
             </div>
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap gap-2">
                 {tags.map((tag, index) => (
                     <span
                         key={index}
@@ -148,4 +149,3 @@ const ProjectCard = ({ projectName, description, tags, url }) => {
         </a>
     );
 };
-  
