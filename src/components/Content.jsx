@@ -81,6 +81,12 @@ export function Content() {
                     tags={['JavaScript', 'HTML/CSS']}
                     url="https://github.com/3andrew/ticket-finder"
                 />
+                <ProjectCard
+                    projectName="LockedIn (Hack the North 2024)"
+                    description="3D map to help students discover and navigate to study rooms, integrated with UWaterloo's API to display availability"
+                    tags={['TypeScript', 'React', 'Express', 'MappedIn API']}
+                    url="https://github.com/SiddharthN16/HTN-2024"
+                />
             </section>
 
             <p className="mt-40 text-xs sm:text-sm font-medium tracking-tight">
