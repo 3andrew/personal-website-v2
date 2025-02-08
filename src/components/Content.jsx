@@ -14,6 +14,15 @@ export function Content() {
             <section id="experience" className="py-16">
                 <h2 className="font-bold text-xl sm:text-2xl uppercase tracking-wider text-slate-200">Experience</h2>
                 <JobCard
+                    imagePath="/geotab.png"
+                    companyName="Geotab"
+                    position="Software Engineer Intern"
+                    location="Waterloo, ON"
+                    duration="Jan. 2025 - Apr. 2025"
+                    tags={['C#', 'GCP', 'Terraform', 'PostgreSQL', 'Kubernetes']}
+                    url="https://www.geotab.com/"
+                />
+                <JobCard
                     imagePath="/td.png"
                     companyName="TD Bank"
                     position="Software Engineer Intern"
