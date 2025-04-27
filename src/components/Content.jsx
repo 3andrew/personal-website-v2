@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Content() {
     return (
         <div className="w-full lg:w-1/2 p-4 z-10">
@@ -111,9 +113,11 @@ const JobCard = ({ imagePath, companyName, position, location, duration, tags, u
         <a href={url} target="_blank" rel="noopener noreferrer" className="block rounded-lg p-3 my-8 hover:bg-violet-800 hover:bg-opacity-15 transition">
             <div className={`flex justify-between items-start ${tags.length ? "mb-4" : ""}`}>
                 <div className="flex items-start">
-                    <img
+                    <Image
                         src={imagePath}
                         alt={`${companyName} Logo`}
+                        width={48}
+                        height={48}
                         className="w-12 h-12 mr-4 object-fill rounded-xl"
                     />
                     <div>

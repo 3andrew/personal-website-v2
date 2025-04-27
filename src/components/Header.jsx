@@ -32,7 +32,7 @@ export function Header() {
     return (
         <header className="w-full lg:w-1/2 p-4 lg:sticky z-10 top-0 flex h-screen flex-col justify-between py-24">
             <div className="text-slate-200">
-                <p className="text-3xl sm:text-5xl font-bold tracking-tight">Andrew Lin</p>
+                <h1 className="text-3xl sm:text-5xl font-bold tracking-tight">Andrew Lin</h1>
                 <p className="mt-6 text-lg sm:text-xl font-medium tracking-tight text-violet-300">Computer Science @ University of Waterloo</p>
                 <nav>
                     <ul className="flex-col space-y-5 text-slate-400 mt-16 py-5 font-medium text-xs sm:text-sm uppercase tracking-widest">

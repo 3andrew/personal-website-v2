@@ -6,6 +6,7 @@ import { useState, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -18,11 +19,11 @@ export default function Home() {
 
       </div>
       <div>
-        <head>
+        <Head>
           <title>Andrew Lin</title>
           <meta name="description" content="personal website" />
           <link rel="icon" href="/favicon.ico" />
-        </head>
+        </Head>
 
         <div className="bg-zinc-900 leading-relaxed text-slate-400 antialiased selection:bg-violet-300 selection:text-violet-900 overflow-x-hidden sm:overflow-x-visible">
           <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
