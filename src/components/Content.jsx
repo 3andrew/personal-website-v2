@@ -75,6 +75,18 @@ export function Content() {
                     url="https://github.com/3andrew/ticket-finder"
                 />            
                 <ProjectCard
+                    projectName="Large Language Model"
+                    description="Large language model from scratch using PyTorch, following GPT-2 transformer architecture"
+                    tags={['PyTorch', 'Python']}
+                    url="https://github.com/3andrew/llm"
+                />
+                <ProjectCard
+                    projectName="IBALearn"
+                    description="Simple tensor library and auto differentiation engine using CUDA (C++) and Python"
+                    tags={['C++', 'CUDA', 'Python']}
+                    url="https://github.com/izzbe/IBALearn"
+                />
+                <ProjectCard
                     projectName="Live Transcriptions"
                     description="Chrome extension that generates live transcripts from any web browser audio source using OpenAI's Whisper"
                     tags={['JavaScript', 'HTML/CSS']}
@@ -98,6 +110,7 @@ export function Content() {
                     tags={['TypeScript', 'React', 'Express', 'MappedIn API']}
                     url="https://github.com/SiddharthN16/HTN-2024"
                 />
+
             </section>
 
             <p className="mt-40 text-xs sm:text-sm font-medium tracking-tight">
