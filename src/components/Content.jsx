@@ -6,7 +6,8 @@ export function Content() {
             <section id="about" className="py-16">
                 <h2 className="font-bold text-xl sm:text-2xl uppercase tracking-wider text-slate-200">About Me</h2>
                 <p className="mt-4 text-sm sm:text-base text-slate-400">
-                    I&apos;m a developer and third-year Computer Science student at the University of Waterloo.
+                    I&apos;m a software engineer and third-year Computer Science student at the University of Waterloo. 
+                    I&apos;m particularly interested in data engineering, statistical learning, and compiler tooling.
                 </p>
                 <p className="mt-4 text-sm sm:text-base text-slate-400">
                     If you&apos;d like to connect, feel free to reach out at <a className="hover:text-violet-300 underline underline-offset-4" href="mailto:adlin@uwaterloo.ca">adlin@uwaterloo.ca</a>.
@@ -69,11 +70,11 @@ export function Content() {
             <section id="projects" className="py-16">
                 <h2 className="font-bold text-xl sm:text-2xl uppercase tracking-wider text-slate-200">Projects</h2>
                 <ProjectCard
-                    projectName="Ticket Finder"
-                    description="Live-updating dashboard to keep track of upcoming events and ticket price history"
-                    tags={['React', 'Spring Boot', 'MySQL', 'Docker']}
-                    url="https://github.com/3andrew/ticket-finder"
-                />            
+                    projectName="Probabilistic Programming Language"
+                    description="Code generation backends in OCaml for four Bayesian network encodings, optimizing compilation time in an exact-inference probabilistic programming language (undergrad research assistant for a ICFP research project)"
+                    tags={['OCaml']}
+                    url=""
+                />
                 <ProjectCard
                     projectName="Large Language Model"
                     description="Large language model from scratch using PyTorch, following GPT-2 transformer architecture"
@@ -87,11 +88,29 @@ export function Content() {
                     url="https://github.com/izzbe/IBALearn"
                 />
                 <ProjectCard
+                    projectName="Ticket Finder"
+                    description="Live-updating dashboard to keep track of upcoming events and ticket price history"
+                    tags={['React', 'Spring Boot', 'MySQL', 'Docker']}
+                    url="https://github.com/3andrew/ticket-finder"
+                />            
+                <ProjectCard
+                    projectName="Estimathon"
+                    description="Led development of the full-stack app behind UW Data Science Club's Estimathon contest, supporting over 50 players"
+                    tags={['Next.js','PostgreSQL','Express.js']}
+                    url="https://github.com/uw-datasci/estimathon"
+                />
+                <ProjectCard
                     projectName="Live Transcriptions"
                     description="Chrome extension that generates live transcripts from any web browser audio source using OpenAI's Whisper"
                     tags={['JavaScript', 'HTML/CSS']}
                     url="https://github.com/3andrew/live-transcriptions"
                 />  
+                <ProjectCard
+                    projectName="LockedIn (Hack the North 2024)"
+                    description="3D map to help students discover and navigate to study rooms, integrated with UWaterloo's API to display availability"
+                    tags={['TypeScript', 'React', 'Express', 'MappedIn API']}
+                    url="https://github.com/SiddharthN16/HTN-2024"
+                />
                 <ProjectCard
                     projectName="Portfolio Website"
                     description="Personal website using Three JS and Tailwind CSS, deployed with Vercel"
@@ -103,12 +122,6 @@ export function Content() {
                     description="App that provides links to music database websites based on user's current Spotify listening activity"
                     tags={['JavaScript', 'HTML/CSS']}
                     url="https://github.com/3andrew/ticket-finder"
-                />
-                <ProjectCard
-                    projectName="LockedIn (Hack the North 2024)"
-                    description="3D map to help students discover and navigate to study rooms, integrated with UWaterloo's API to display availability"
-                    tags={['TypeScript', 'React', 'Express', 'MappedIn API']}
-                    url="https://github.com/SiddharthN16/HTN-2024"
                 />
 
             </section>
